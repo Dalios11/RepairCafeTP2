@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repair Café | S'inscrire</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-logos">
+            <img src="images/Bloc_Logo_IUT.jpg" alt="Logo IUT" class="logo-img">
+            <img src="images/Bloc_Logo_Info.png" alt="Logo Informatique" class="logo-img">        </div>
+
+        <div class="header-title">Repair Café</div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="inscription.html">S'inscrire</a></li>
+                <li><a href="diagnostic.html">Diagnostic / RDV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="don.html" class="btn-don">Recyclage</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-content">
+        <div class="form-container">
+            <h2>Inscription au prochain Repair Café</h2>
+            <p>Choisissez la date et votre participation (Bénévole ou Client).</p>
+            
+            <form action="https://script.google.com/macros/s/AKfycbyuKWtDbaNaz4g7I8u2mVlLJkD2D2b5UIHRF-pIA67bqQCK-XjgoEquWKPjaoadj3rTuA/exec" method="POST" class="classic-form">
+                <div class="form-group">
+                    <label for="date-jeudi">Choisissez un jeudi</label>
+                    <select id="date-jeudi" name="date-jeudi" required>
+                        <option value="">Sélectionnez une date...</option>
+                        <option value="21-mai">Jeudi 21 Mai</option>
+                        <option value="28-mai">Jeudi 28 Mai</option>
+                        <option value="04-juin">Jeudi 4 Juin</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Je souhaite :</label>
+                    <div class="radio-group">
+                        <input type="radio" id="role-visiteur" name="role" value="visiteur" checked>
+                        <label for="role-visiteur">Je souhaite faire réparer un objet</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="role-benevole" name="role" value="benevole">
+                        <label for="role-benevole">Je souhaite aider à réparer (Bénévole)</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="nom-insc">Nom complet</label>
+                    <input type="text" id="nom-insc" name="nom-insc" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Vous êtes :</label>
+                    <div class="radio-group">
+                        <input type="radio" id="statut-eleve" name="statut" value="Élève" checked>
+                        <label for="statut-eleve">Élève</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="statut-prof" name="statut" value="Enseignant">
+                        <label for="statut-prof">Enseignant</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="promo">Promotion / Département :</label>
+                    <select id="promo" name="promo" required>
+                        <option value="">Sélectionnez une option...</option>
+                        <option value="Informatique">Informatique</option>
+                        <option value="QLIO">QLIO</option>
+                        <option value="GEA">GEA</option>
+                        <option value="InfoCom">InfoCom</option>
+                        <option value="Carriere Juridique">Carrière Juridique</option>
+						<option value="autre">Autre</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn-primary">Confirmer l'inscription</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Repair Café. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

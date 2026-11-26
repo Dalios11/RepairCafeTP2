@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repair Café | Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-logos">
+            <img src="images/Bloc_Logo_IUT.jpg" alt="Logo IUT" class="logo-img">
+            <img src="images/Bloc_Logo_Info.png" alt="Logo Informatique" class="logo-img">        </div>
+
+        <div class="header-title">Repair Café</div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="inscription.html">S'inscrire</a></li>
+                <li><a href="diagnostic.html">Diagnostic / RDV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="don.html" class="btn-don">Recyclage</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-content">
+        <div class="form-container">
+            <h2>Nous contacter</h2>
+            <p>Une question sur notre fonctionnement ? Un partenariat à proposer ? Laissez-nous un message et nous vous répondrons rapidement.</p>
+            
+            <form action="#" method="POST" class="classic-form">
+                <div class="form-group">
+                    <label for="nom-contact">Nom complet</label>
+                    <input type="text" id="nom-contact" name="nom-contact" required>
+                </div>
+                <div class="form-group">
+                    <label for="email-contact">Adresse e-mail</label>
+                    <input type="email" id="email-contact" name="email-contact" required>
+                </div>
+                <div class="form-group">
+                    <label for="sujet">Sujet de votre message</label>
+                    <input type="text" id="sujet" name="sujet" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Votre message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Envoyer le message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Repair Café. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
